@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="hlZ-C2-3iB" customClass="Header" customModule="THEAPP" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aLj-Po-n4u">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wng-mg-34q">
+                            <rect key="frame" x="16" y="13" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="dQI-as-fGD"/>
+                            </constraints>
+                            <state key="normal" image="filterBlu-1"/>
+                        </button>
+                        <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="qZA-Ta-MFk">
+                            <rect key="frame" x="54" y="0.0" width="307" height="56"/>
+                            <color key="barTintColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
+                    </subviews>
+                    <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="qZA-Ta-MFk" firstAttribute="leading" secondItem="wng-mg-34q" secondAttribute="trailing" constant="8" id="3IX-Ql-YgM"/>
+                        <constraint firstItem="qZA-Ta-MFk" firstAttribute="top" secondItem="aLj-Po-n4u" secondAttribute="top" id="NDZ-Si-ohJ"/>
+                        <constraint firstAttribute="trailing" secondItem="qZA-Ta-MFk" secondAttribute="trailing" constant="14" id="Rd1-4H-qaZ"/>
+                        <constraint firstItem="wng-mg-34q" firstAttribute="top" secondItem="aLj-Po-n4u" secondAttribute="top" constant="13" id="Vka-Tb-jmN"/>
+                        <constraint firstItem="wng-mg-34q" firstAttribute="leading" secondItem="aLj-Po-n4u" secondAttribute="leading" constant="16" id="ags-8W-T8t"/>
+                        <constraint firstAttribute="bottom" secondItem="qZA-Ta-MFk" secondAttribute="bottom" id="mgY-l4-VK1"/>
+                        <constraint firstAttribute="bottom" secondItem="wng-mg-34q" secondAttribute="bottom" constant="13" id="wWF-jC-ao4"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <accessibility key="accessibilityConfiguration" identifier="HeaderView"/>
+            <constraints>
+                <constraint firstItem="aLj-Po-n4u" firstAttribute="trailing" secondItem="fcQ-Kp-uJM" secondAttribute="trailing" id="Jqk-CB-Ukz"/>
+                <constraint firstItem="aLj-Po-n4u" firstAttribute="leading" secondItem="fcQ-Kp-uJM" secondAttribute="leading" id="PeD-ud-c8G"/>
+                <constraint firstItem="aLj-Po-n4u" firstAttribute="bottom" secondItem="fcQ-Kp-uJM" secondAttribute="bottom" id="bin-5E-2gw"/>
+                <constraint firstItem="aLj-Po-n4u" firstAttribute="top" secondItem="fcQ-Kp-uJM" secondAttribute="top" id="jk8-ui-OQs"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fcQ-Kp-uJM"/>
+            <connections>
+                <outlet property="filterBtn" destination="wng-mg-34q" id="U6J-f3-ilI"/>
+                <outlet property="searchBar" destination="qZA-Ta-MFk" id="xWn-Ka-0Re"/>
+            </connections>
+            <point key="canvasLocation" x="398.5" y="-663"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="filterBlu-1" width="25" height="25"/>
+    </resources>
+</document>

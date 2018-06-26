@@ -1,0 +1,6 @@
+framework module Pods_THEAPP {
+  umbrella header "Pods-THEAPP-umbrella.h"
+
+  export *
+  module * { export * }
+}
