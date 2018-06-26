@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BE0756C020E19651002F4F3A /* animat-search.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE0756BF20E19651002F4F3A /* animat-search.gif */; };
 		BE08A2D5CA241CF58003D9A3 /* Pods_THEAPP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B3D0B35BBD22FE80B8B6ABA /* Pods_THEAPP.framework */; };
+		BE13AD2B20E2CD9D001AEE21 /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE13AD2920E2CD9D001AEE21 /* Slide.xib */; };
+		BE13AD2C20E2CD9D001AEE21 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE13AD2A20E2CD9D001AEE21 /* Slide.swift */; };
 		BE19756620D972070082A309 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE19756520D972070082A309 /* PageViewController.swift */; };
 		BE19756820D976170082A309 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE19756720D976170082A309 /* SignUpController.swift */; };
 		BE19756E20D9970F0082A309 /* AcademicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE19756D20D9970F0082A309 /* AcademicViewController.swift */; };
@@ -29,6 +30,12 @@
 		BEA5B45320CEC5A50025162D /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA5B45220CEC5A50025162D /* FeedViewController.swift */; };
 		BEA5B45620CEE50F0025162D /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA5B45520CEE50F0025162D /* SignInViewController.swift */; };
 		BEA5B46120CFF4110025162D /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = BEA5B46020CFF4110025162D /* Podfile */; };
+		BEAF661520E2D4B500989388 /* animat-pencil-color.gif in Resources */ = {isa = PBXBuildFile; fileRef = BEAF661420E2D4B500989388 /* animat-pencil-color.gif */; };
+		BEAF661720E2D4C700989388 /* animat-rocket-color.gif in Resources */ = {isa = PBXBuildFile; fileRef = BEAF661620E2D4C700989388 /* animat-rocket-color.gif */; };
+		BEAF661920E2D4CF00989388 /* animat-rocket.gif in Resources */ = {isa = PBXBuildFile; fileRef = BEAF661820E2D4CE00989388 /* animat-rocket.gif */; };
+		BEAF661B20E2D4E200989388 /* animat-pencil.gif in Resources */ = {isa = PBXBuildFile; fileRef = BEAF661A20E2D4E200989388 /* animat-pencil.gif */; };
+		BEAF661D20E2D4ED00989388 /* animat-search-color.gif in Resources */ = {isa = PBXBuildFile; fileRef = BEAF661C20E2D4ED00989388 /* animat-search-color.gif */; };
+		BEAF661F20E2D4F500989388 /* animat-search.gif in Resources */ = {isa = PBXBuildFile; fileRef = BEAF661E20E2D4F400989388 /* animat-search.gif */; };
 		BEB5241D20DA822000A71995 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB5241C20DA822000A71995 /* Response.swift */; };
 		BEB5241F20DBE03300A71995 /* PostResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB5241E20DBE03300A71995 /* PostResponse.swift */; };
 		BEC8ECFC20D42812007A91F6 /* UniversitarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC8ECFB20D42812007A91F6 /* UniversitarioViewController.swift */; };
@@ -39,6 +46,7 @@
 		BEC8ED0C20D84DC2007A91F6 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC8ED0B20D84DC2007A91F6 /* CardView.swift */; };
 		BEC8ED0F20D93037007A91F6 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC8ED0E20D93037007A91F6 /* Header.swift */; };
 		BEC8ED1320D9357F007A91F6 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEC8ED1220D9357F007A91F6 /* HeaderView.xib */; };
+		BED1830220E2CEEA00285394 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED1830120E2CEEA00285394 /* OnboardingViewController.swift */; };
 		BEDE8CE420D2E40200B5A957 /* CardUniversitarioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDE8CE220D2E40200B5A957 /* CardUniversitarioTableViewCell.swift */; };
 		BEDE8CE520D2E40200B5A957 /* CardUniversitarioTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEDE8CE320D2E40200B5A957 /* CardUniversitarioTableViewCell.xib */; };
 		BEDE8D2320D3F1DD00B5A957 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDE8D2220D3F1DD00B5A957 /* GradientView.swift */; };
@@ -65,7 +73,8 @@
 		2B3D0B35BBD22FE80B8B6ABA /* Pods_THEAPP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_THEAPP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D5F2750DA233BB17ED32892 /* Pods-THEAPP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-THEAPP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-THEAPP/Pods-THEAPP.debug.xcconfig"; sourceTree = "<group>"; };
 		B1378E77EE6281CD8AE137F3 /* Pods-THEAPP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-THEAPP.release.xcconfig"; path = "Pods/Target Support Files/Pods-THEAPP/Pods-THEAPP.release.xcconfig"; sourceTree = "<group>"; };
-		BE0756BF20E19651002F4F3A /* animat-search.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "animat-search.gif"; sourceTree = "<group>"; };
+		BE13AD2920E2CD9D001AEE21 /* Slide.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
+		BE13AD2A20E2CD9D001AEE21 /* Slide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
 		BE19756520D972070082A309 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		BE19756720D976170082A309 /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
 		BE19756D20D9970F0082A309 /* AcademicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcademicViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +101,12 @@
 		BEA5B45220CEC5A50025162D /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		BEA5B45520CEE50F0025162D /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		BEA5B46020CFF4110025162D /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BEAF661420E2D4B500989388 /* animat-pencil-color.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "animat-pencil-color.gif"; sourceTree = "<group>"; };
+		BEAF661620E2D4C700989388 /* animat-rocket-color.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "animat-rocket-color.gif"; sourceTree = "<group>"; };
+		BEAF661820E2D4CE00989388 /* animat-rocket.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "animat-rocket.gif"; sourceTree = "<group>"; };
+		BEAF661A20E2D4E200989388 /* animat-pencil.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "animat-pencil.gif"; sourceTree = "<group>"; };
+		BEAF661C20E2D4ED00989388 /* animat-search-color.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "animat-search-color.gif"; sourceTree = "<group>"; };
+		BEAF661E20E2D4F400989388 /* animat-search.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "animat-search.gif"; sourceTree = "<group>"; };
 		BEB5241C20DA822000A71995 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		BEB5241E20DBE03300A71995 /* PostResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostResponse.swift; sourceTree = "<group>"; };
 		BEC8ECFB20D42812007A91F6 /* UniversitarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversitarioViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +117,7 @@
 		BEC8ED0B20D84DC2007A91F6 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		BEC8ED0E20D93037007A91F6 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 		BEC8ED1220D9357F007A91F6 /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		BED1830120E2CEEA00285394 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		BEDE8CE220D2E40200B5A957 /* CardUniversitarioTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardUniversitarioTableViewCell.swift; sourceTree = "<group>"; };
 		BEDE8CE320D2E40200B5A957 /* CardUniversitarioTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardUniversitarioTableViewCell.xib; sourceTree = "<group>"; };
 		BEDE8D2220D3F1DD00B5A957 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
@@ -227,7 +243,12 @@
 		BEA5B45420CEC5AD0025162D /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				BE0756BF20E19651002F4F3A /* animat-search.gif */,
+				BEAF661620E2D4C700989388 /* animat-rocket-color.gif */,
+				BEAF661820E2D4CE00989388 /* animat-rocket.gif */,
+				BEAF661420E2D4B500989388 /* animat-pencil-color.gif */,
+				BEAF661A20E2D4E200989388 /* animat-pencil.gif */,
+				BEAF661C20E2D4ED00989388 /* animat-search-color.gif */,
+				BEAF661E20E2D4F400989388 /* animat-search.gif */,
 				BEA5B42220CEC1610025162D /* FilterViewController.swift */,
 				BEA5B45220CEC5A50025162D /* FeedViewController.swift */,
 				BEA5B45520CEE50F0025162D /* SignInViewController.swift */,
@@ -238,6 +259,7 @@
 				BE19756720D976170082A309 /* SignUpController.swift */,
 				BEA5B44E20CEC1A20025162D /* PersonalViewController.swift */,
 				BE19756D20D9970F0082A309 /* AcademicViewController.swift */,
+				BED1830120E2CEEA00285394 /* OnboardingViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -249,6 +271,8 @@
 				BEDE8CE320D2E40200B5A957 /* CardUniversitarioTableViewCell.xib */,
 				BEC8ED0E20D93037007A91F6 /* Header.swift */,
 				BEC8ED1220D9357F007A91F6 /* HeaderView.xib */,
+				BE13AD2A20E2CD9D001AEE21 /* Slide.swift */,
+				BE13AD2920E2CD9D001AEE21 /* Slide.xib */,
 			);
 			path = Xib;
 			sourceTree = "<group>";
@@ -373,12 +397,18 @@
 			files = (
 				BEDE8CE520D2E40200B5A957 /* CardUniversitarioTableViewCell.xib in Resources */,
 				BE250C5420D2B95200DB9D9B /* .gitignore in Resources */,
-				BE0756C020E19651002F4F3A /* animat-search.gif in Resources */,
 				BEA5B42B20CEC1610025162D /* LaunchScreen.storyboard in Resources */,
+				BEAF661D20E2D4ED00989388 /* animat-search-color.gif in Resources */,
 				BEA5B42820CEC1610025162D /* Assets.xcassets in Resources */,
+				BEAF661520E2D4B500989388 /* animat-pencil-color.gif in Resources */,
+				BEAF661F20E2D4F500989388 /* animat-search.gif in Resources */,
 				BEA5B46120CFF4110025162D /* Podfile in Resources */,
+				BEAF661720E2D4C700989388 /* animat-rocket-color.gif in Resources */,
+				BEAF661B20E2D4E200989388 /* animat-pencil.gif in Resources */,
 				BEA5B42620CEC1610025162D /* Main.storyboard in Resources */,
+				BEAF661920E2D4CF00989388 /* animat-rocket.gif in Resources */,
 				BEC8ED1320D9357F007A91F6 /* HeaderView.xib in Resources */,
+				BE13AD2B20E2CD9D001AEE21 /* Slide.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +491,7 @@
 				BEA5B45620CEE50F0025162D /* SignInViewController.swift in Sources */,
 				BEC8ECFC20D42812007A91F6 /* UniversitarioViewController.swift in Sources */,
 				BEDE8CE420D2E40200B5A957 /* CardUniversitarioTableViewCell.swift in Sources */,
+				BED1830220E2CEEA00285394 /* OnboardingViewController.swift in Sources */,
 				BEB5241D20DA822000A71995 /* Response.swift in Sources */,
 				BEA5B45320CEC5A50025162D /* FeedViewController.swift in Sources */,
 				BE37C47020E11DE6006C93A5 /* TagButton.swift in Sources */,
@@ -468,6 +499,7 @@
 				BE19756620D972070082A309 /* PageViewController.swift in Sources */,
 				BEC8ED0220D7CCA2007A91F6 /* ProfileViewController.swift in Sources */,
 				BEA5B45120CEC3610025162D /* Universitario.swift in Sources */,
+				BE13AD2C20E2CD9D001AEE21 /* Slide.swift in Sources */,
 				BEA5B42120CEC1610025162D /* AppDelegate.swift in Sources */,
 				BEDE8D2320D3F1DD00B5A957 /* GradientView.swift in Sources */,
 				BE37C46820DD8A77006C93A5 /* LoginResponse.swift in Sources */,
@@ -638,12 +670,14 @@
 			baseConfigurationReference = 8D5F2750DA233BB17ED32892 /* Pods-THEAPP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H3RQC49HYF;
+				DEVELOPMENT_TEAM = U9XP2P92X2;
 				INFOPLIST_FILE = THEAPP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.academy.THEAPP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -654,12 +688,14 @@
 			baseConfigurationReference = B1378E77EE6281CD8AE137F3 /* Pods-THEAPP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H3RQC49HYF;
+				DEVELOPMENT_TEAM = U9XP2P92X2;
 				INFOPLIST_FILE = THEAPP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.academy.THEAPP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

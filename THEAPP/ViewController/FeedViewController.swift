@@ -40,13 +40,14 @@ class FeedViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationController?.navigationBar.backgroundColor = UIColor.clear
+        
         cloudinary = CLDCloudinary(configuration: config)
         imageView.setupUI(controller: self)
         
 //        notFound.image = #imageLiteral(resourceName: "notFound-2")
         notFound.image = #imageLiteral(resourceName: "notfound-vector")
-
-        self.view.backgroundColor = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
         
         universitariosTableView.register(UINib(nibName: "CardUniversitarioTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
         let headerNib = UINib.init(nibName: "HeaderView", bundle: nil)
@@ -192,7 +193,12 @@ extension FeedViewController: UITableViewDataSource, UITableViewDelegate, UISear
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let universitario = universitarios[indexPath.row]
+        var universitario : Universitario
+        if searchActive{
+            universitario = filteredUni[indexPath.row]
+        } else {
+            universitario = universitarios[indexPath.row]
+        }
         imageView.isHidden = true
         navigationItem.backBarButtonItem?.tintColor = UIColor.white
         performSegue(withIdentifier: "detalhes", sender: universitario)

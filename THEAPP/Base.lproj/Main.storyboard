@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PIY-6C-er5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jjZ-S1-hss">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -864,7 +864,7 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.9525770285906241" green="0.9525770285906241" blue="0.9525770285906241" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="gOJ-4W-jJg" firstAttribute="top" secondItem="NJi-LT-inf" secondAttribute="top" constant="32" id="6Qw-Ny-lAT"/>
                             <constraint firstItem="gOJ-4W-jJg" firstAttribute="centerX" secondItem="Cy7-nq-hP9" secondAttribute="centerX" id="gyw-2R-Lax"/>
@@ -922,7 +922,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" name="our gray"/>
+                        <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="kDF-CC-PL7" firstAttribute="top" secondItem="ypo-mD-DjB" secondAttribute="top" id="4vY-q3-xHc"/>
                             <constraint firstItem="kDF-CC-PL7" firstAttribute="trailing" secondItem="ypo-mD-DjB" secondAttribute="trailing" id="F2h-JW-vqX"/>
@@ -1607,10 +1607,50 @@
             </objects>
             <point key="canvasLocation" x="2620" y="-1925.4872563718143"/>
         </scene>
+        <!--Onboarding View Controller-->
+        <scene sceneID="Nfz-9r-mxt">
+            <objects>
+                <viewController storyboardIdentifier="onboardVC" id="jjZ-S1-hss" customClass="OnboardingViewController" customModule="THEAPP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nFl-Ai-xSF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="PDq-bS-YhR">
+                                <rect key="frame" x="142" y="594" width="89" height="37"/>
+                                <color key="pageIndicatorTintColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="currentPageIndicatorTintColor" red="0.30196078430000001" green="0.60392156860000001" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </pageControl>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F7l-Q6-Iox">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pyn-Bj-wgJ" firstAttribute="trailing" secondItem="PDq-bS-YhR" secondAttribute="trailing" constant="144" id="0ua-YW-2t3"/>
+                            <constraint firstItem="F7l-Q6-Iox" firstAttribute="trailing" secondItem="pyn-Bj-wgJ" secondAttribute="trailing" id="QYh-J7-mco"/>
+                            <constraint firstItem="F7l-Q6-Iox" firstAttribute="leading" secondItem="pyn-Bj-wgJ" secondAttribute="leading" id="SBh-rR-cDS"/>
+                            <constraint firstItem="PDq-bS-YhR" firstAttribute="leading" secondItem="pyn-Bj-wgJ" secondAttribute="leading" constant="142" id="Wgd-Kx-g4C"/>
+                            <constraint firstItem="F7l-Q6-Iox" firstAttribute="top" secondItem="nFl-Ai-xSF" secondAttribute="top" id="aI2-Zr-FUs"/>
+                            <constraint firstItem="PDq-bS-YhR" firstAttribute="top" secondItem="pyn-Bj-wgJ" secondAttribute="top" constant="574" id="h2O-AI-fA3"/>
+                            <constraint firstItem="F7l-Q6-Iox" firstAttribute="bottom" secondItem="pyn-Bj-wgJ" secondAttribute="bottom" id="rpH-VX-cTK"/>
+                            <constraint firstItem="pyn-Bj-wgJ" firstAttribute="bottom" secondItem="PDq-bS-YhR" secondAttribute="bottom" constant="36" id="zhX-1B-QLV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pyn-Bj-wgJ"/>
+                    </view>
+                    <connections>
+                        <outlet property="pageControl" destination="PDq-bS-YhR" id="TdD-O1-kcQ"/>
+                        <outlet property="scrollView" destination="F7l-Q6-Iox" id="mzF-6v-q0p"/>
+                        <segue destination="PIY-6C-er5" kind="showDetail" identifier="start" id="sIo-Bj-UB8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jh9-p2-s8X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1604" y="-1925.4872563718143"/>
+        </scene>
         <!--Item-->
         <scene sceneID="4Z4-RR-NGV">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PIY-6C-er5" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="startVC" automaticallyAdjustsScrollViewInsets="NO" id="PIY-6C-er5" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="Vt9-L9-3vx"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="uTK-JI-i01">
@@ -1693,9 +1733,6 @@
         <image name="xWhite-1" width="16" height="16"/>
         <namedColor name="light blue">
             <color red="0.33700001239776611" green="0.63499999046325684" blue="0.89399999380111694" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="our gray">
-            <color red="0.96899998188018799" green="0.96899998188018799" blue="0.96899998188018799" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
     </resources>
 </document>
